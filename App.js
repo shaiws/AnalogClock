@@ -91,11 +91,9 @@ export default class AnalogClock extends Component {
   render() {
 
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: "lightblue" }}>
+      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'space-evenly', backgroundColor: "lightblue" }}>
         <StatusBar backgroundColor="lightblue" barStyle="dark-content" />
-        <Text style={{ flex: 1, paddingTop: 50, fontSize: 50, color: this.state.digitalColor }} onLongPress={(e) => this._resetDigital(e)} onPress={(e) => this._chageDigitalStyle()}>{this.state.curTime}</Text>
-        <View style={{ flex: 10, alignItems: 'center', justifyContent: 'center' }}>
-
+        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
           <TouchableWithoutFeedback style={{ position: 'absolute', width: 140 * 2, height: 140 * 2 }}
             onPress={() => this._changeClockFrame()}>
             <Image
@@ -132,6 +130,7 @@ export default class AnalogClock extends Component {
           }]}
           />
         </View>
+        <Text style={{ fontSize: 50, color: this.state.digitalColor }} onLongPress={(e) => this._resetDigital(e)} onPress={(e) => this._chageDigitalStyle()}>{this.state.curTime}</Text>
       </View>
     )
   };

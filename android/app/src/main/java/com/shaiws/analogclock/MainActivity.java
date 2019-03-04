@@ -1,4 +1,4 @@
-package com.analogclock;
+package com.shaiws.analogclock;
 
 import com.facebook.react.ReactActivity;
 

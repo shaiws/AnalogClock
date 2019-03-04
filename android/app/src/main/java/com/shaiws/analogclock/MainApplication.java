@@ -1,4 +1,4 @@
-package com.analogclock;
+package com.shaiws.analogclock;
 
 import android.app.Application;
 
